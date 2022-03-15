@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
-    factory :tweet do
-        
-    end
+  factory :tweet do
   end
+end

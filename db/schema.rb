@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,21 +12,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_07_000055) do
-  create_table "tweets", force: :cascade do |t|
-    t.string "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "username_id"
-    t.index ["username_id"], name: "index_tweets_on_username_id"
+ActiveRecord::Schema[7.0].define(version: 20_220_307_000_055) do
+  create_table 'tweets', force: :cascade do |t|
+    t.string 'body'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
+    t.integer 'username_id'
+    t.index ['username_id'], name: 'index_tweets_on_username_id'
   end
 
-  create_table "usernames", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.float "age"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table 'usernames', force: :cascade do |t|
+    t.string 'first_name'
+    t.string 'last_name'
+    t.float 'age'
+    t.datetime 'created_at', null: false
+    t.datetime 'updated_at', null: false
   end
-
 end
